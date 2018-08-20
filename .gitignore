@@ -24,7 +24,8 @@
 /nbdist/
 /.nb-gradle
 
-/data/
 /target/**
 */**/target/
 .DS_Store
+
+ /file-copy/src/test/resources/data/**
