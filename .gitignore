@@ -22,4 +22,9 @@
 /nbbuild/
 /dist/
 /nbdist/
-/.nb-gradle/
+/.nb-gradle
+
+/data/
+/target/**
+*/**/target/
+.DS_Store
