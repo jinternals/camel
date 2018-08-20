@@ -1,5 +1,6 @@
 /target/
 !.mvn/wrapper/maven-wrapper.jar
+!/data/inbox/1.txt
 
 ### STS ###
 .apt_generated
@@ -28,4 +29,5 @@
 */**/target/
 .DS_Store
 
+/data/**
 /file-copy/src/test/resources/data/**
