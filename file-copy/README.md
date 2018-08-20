@@ -1,10 +1,8 @@
-#File Component
+# File Component
+File component provides facility to perform opertions on file in os.
 
-### Code flow Diagram:
+### Code flow diagram:
 ![alt text](../images/file-copy.png)
-
-### Description :
-See: Move file operations 
 
 #### Link:
 http://camel.apache.org/file2.html
