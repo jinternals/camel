@@ -13,7 +13,7 @@ public class FileCopyRoute extends RouteBuilder {
     private String destinationDir;
 
     @Autowired
-    public FileCopyRoute(@Value("source.dir") String sourceDir, @Value("destinaton.dir") String destinationDir)
+    public FileCopyRoute(@Value("${source.dir}") String sourceDir, @Value("${destinaton.dir}") String destinationDir)
     {
         this.sourceDir = sourceDir;
         this.destinationDir = destinationDir;
