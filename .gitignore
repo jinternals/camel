@@ -28,4 +28,4 @@
 */**/target/
 .DS_Store
 
- /file-copy/src/test/resources/data/**
+/file-copy/src/test/resources/data/**
