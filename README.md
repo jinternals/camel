@@ -8,6 +8,7 @@ The fundamental entity containing the data being carried and routed in Camel.
 
 ### Exchange: 
 An Exchange is the message container holding the information during the entire routing of a Message received by a Consumer.
+
 ![alt text](./images/exchange.png)
 
 * **Exchange ID** — A unique ID that identifies the exchange. Camel automatically generates the unique ID.
