@@ -17,3 +17,10 @@ An Exchange is the message container holding the information during the entire r
 * **Properties** — Similar to message headers, but they last for the duration of the entire exchange. Properties are used to contain global-level information, whereas message headers are specific to a particular message. Camel itself adds various properties to the exchange during routing. You, as a developer, can store and retrieve properties at any point during the lifetime of an exchange.
 * **In message** — This is the input message, which is mandatory. The in message contains the request message.
 * **Out message** — This is an optional message that exists only if the MEP is InOut. The out message contains the reply message.# camel
+
+
+#### Examples:
+
+* [File copy](./file-copy/README.md)
+* [Content based routing](./content-based-routing/README.md)
+* [Content based routing](./message-filter/README.md)
