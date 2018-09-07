@@ -23,4 +23,4 @@ An Exchange is the message container holding the information during the entire r
 
 * [File copy](./file-copy/README.md)
 * [Content based routing](./content-based-routing/README.md)
-* [message-filter](./message-filter/README.md)
+* [Message-filter](./message-filter/README.md)
