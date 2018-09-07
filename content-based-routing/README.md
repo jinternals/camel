@@ -1,4 +1,4 @@
-# Content base routing
+# Content based routing
 In this example we route message based on it's sku to different routes.
 
 ### Code flow diagram:
