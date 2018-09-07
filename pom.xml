@@ -9,6 +9,7 @@
     <modules>
         <module>file-copy</module>
         <module>content-based-routing</module>
+        <module>message-filter</module>
     </modules>
     <packaging>pom</packaging>
 

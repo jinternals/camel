@@ -29,6 +29,7 @@ public class OrderRoute extends RouteBuilder {
                 .split(body().tokenize())
                 .streaming()
                 .unmarshal(new BindyCsvDataFormat(Order.class))
+                .filter(isTestOrder)
                 .choice()
                     .when(isSku("laptop"))
                         .to(LAPTOP_ENDPOINT)
@@ -52,13 +53,16 @@ public class OrderRoute extends RouteBuilder {
                 .log("Other : ${body}");
     }
 
+    private Predicate isTestOrder = exchange -> {
+            Order order =  exchange.getIn().getBody(Order.class);
+            return !(order.getName().startsWith("Test") || order.getName().startsWith("test"));
+    };
+
+
     private Predicate isSku(String sku) {
-        return new Predicate() {
-            @Override
-            public boolean matches(Exchange exchange) {
-              Order order =  exchange.getIn().getBody(Order.class);
-                return order.getSku().equalsIgnoreCase(sku);
-            }
+        return exchange -> {
+          Order order =  exchange.getIn().getBody(Order.class);
+            return order.getSku().equalsIgnoreCase(sku);
         };
     }
 
