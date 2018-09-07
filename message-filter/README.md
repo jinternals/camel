@@ -1,4 +1,4 @@
-# Content based routing
+# Message filter
 In this example we filter message out if it's name start with test.
 
 ### Code flow diagram:
